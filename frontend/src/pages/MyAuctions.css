@@ -1,0 +1,243 @@
+/* Show Active Auctions Button */
+.show-active-auctions-btn {
+  background: linear-gradient(90deg, #6366f1 0%, #60a5fa 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(99,102,241,0.08);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  margin-bottom: 1rem;
+}
+.show-active-auctions-btn:hover {
+  background: linear-gradient(90deg, #60a5fa 0%, #6366f1 100%);
+  box-shadow: 0 4px 16px rgba(99,102,241,0.12);
+}
+
+/* Active Auction Card */
+.active-auction-card {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #f3f4f6;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.active-auction-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.go-bid-btn {
+  margin-top: 0.5rem;
+  display: inline-block;
+  background: #6366f1;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.go-bid-btn:hover {
+  background: #4338ca;
+}
+.dashboard-my-auctions {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.add-auction-btn {
+  background: #3b82f6;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.65rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.add-auction-btn:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(59, 130, 246, 0.1);
+}
+
+.auction-table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.auction-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  min-width: 800px;
+}
+
+.auction-table th, 
+.auction-table td {
+  padding: 1.25rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.auction-table th {
+  background: #f8fafc;
+  font-weight: 600;
+  color: #64748b;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.auction-table tr:last-child td {
+  border-bottom: none;
+}
+
+.auction-table tr:hover td {
+  background-color: #f8fafc;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.status-upcoming {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.status-active {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.status-ended {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.action-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.edit-btn {
+  background-color: #eff6ff;
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.edit-btn:hover {
+  background-color: #dbeafe;
+}
+
+.view-details-btn {
+  background-color: #042670;
+  color: white;
+  width: 80%;
+}
+
+.view-details-btn:hover {
+  background-color: #042670;
+}
+
+.delete-btn {
+  background-color: #fef2f2;
+  color: #ef4444;
+}
+
+.delete-btn:hover {
+  background-color: #fee2e2;
+}
+
+@media (max-width: 768px) {
+  .dashboard-my-auctions {
+    padding: 1.5rem 1rem;
+  }
+  
+  .auction-table th, 
+  .auction-table td {
+    padding: 1rem;
+  }
+}
+
+.auction-count {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.action-btn svg {
+  vertical-align: middle;
+  margin-right: 0.25rem;
+}
+.status-deleted {
+ background: #ef4444;
+ width: 80%;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.65rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+}

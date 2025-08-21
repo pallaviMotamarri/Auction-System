@@ -1,0 +1,39 @@
+.auction-ended-details-container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 32px;
+}
+.back-btn {
+  background: #f5f5f5;
+  border: none;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.winner-section, .participants-section, .bid-history-section {
+  margin-bottom: 24px;
+}
+.winner-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: #2e7d32;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

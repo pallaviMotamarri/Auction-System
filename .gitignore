@@ -1,0 +1,14 @@
+# Ignore dependencies
+node_modules/
+
+# Ignore database files
+data/
+
+# Ignore logs
+*.log
+
+# Ignore build artifacts
+dist/
+build/
+# Environment variables
+.env

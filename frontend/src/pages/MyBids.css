@@ -1,0 +1,119 @@
+.dashboard-my-bids {
+  padding: 2rem;
+}
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.bids-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.tab {
+  background: #f7faff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #2d7ff9;
+  transition: background 0.2s, color 0.2s;
+}
+.tab.active {
+  background: #2d7ff9;
+  color: #fff;
+}
+.bids-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+.bid-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 1.5rem;
+  transition: box-shadow 0.2s;
+}
+.bid-card:hover {
+  box-shadow: 0 4px 16px rgba(45,127,249,0.12);
+}
+.bid-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.bid-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.winner {
+  color: #2ecc40;
+  font-weight: 600;
+}
+.loading, .error {
+  margin-top: 2rem;
+  text-align: center;
+  color: #888;
+}
+
+/* Auctions Won Notifications Section */
+.notifications-section {
+  max-width: 700px;
+  margin: 2rem auto 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(45,127,249,0.08);
+  padding: 2rem 2.5rem;
+}
+.notifications-section h3 {
+  color: #2d7ff9;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.notifications-section ul {
+  list-style: none;
+  padding: 0;
+}
+.notifications-section li {
+  background: #f7faff;
+  margin-bottom: 1.2rem;
+  padding: 1.2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(45,127,249,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: box-shadow 0.2s;
+}
+.notifications-section li:hover {
+  box-shadow: 0 4px 16px rgba(45,127,249,0.12);
+}
+.notifications-section strong {
+  color: #222;
+}
+.notifications-section .no-won {
+  color: #888;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.notifications-section button {
+  background: #2d7ff9;
+  color: #fff;
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1.2rem;
+  transition: background 0.2s;
+}
+.notifications-section button:hover {
+  background: #174ea6;
+}
